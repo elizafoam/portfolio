@@ -1,0 +1,18 @@
+.Banner {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+}
+
+.username {
+  font-size: 1.25rem;
+}
+
+.logo img {
+  width: 1.5rem;
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+}

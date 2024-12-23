@@ -1,0 +1,55 @@
+.Experience {
+  display: flex;
+  gap: 0.5rem;
+  align-items: start;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.Experience .dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.Experience .line {
+  width: 0.07rem;
+  flex-grow: 1;
+  background-color: black;
+}
+
+.experience-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+
+.position {
+  font-size: 1.3rem;
+}
+
+.date {
+  font-size: 1.3rem;
+}
+
+
+.skills-section {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 50rem;
+}
+
+.skill {
+  background-color: #cb9ed8;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
