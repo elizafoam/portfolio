@@ -29,7 +29,7 @@ const App = () => {
       <Banner />
       <Header />
       <About />
-      <div className='curly manrope-light'>~</div>
+      <div className='curly manrope-heading'>~</div>
       <section className='main'>
         <div className='about-title manrope-heading'>Professional Experience</div>
         <div className='experience-section'>
@@ -61,7 +61,7 @@ const App = () => {
           <div>- {quote["author"]}</div>
         </div> */}
       </section>
-      
+      <div className='curly manrope-heading'>~</div>
       <Footer />
     </div>
   )
