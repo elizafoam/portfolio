@@ -85,3 +85,15 @@
   border-radius: 1rem;
   max-width: 50vw;
 }
+
+@media (max-width: 425px) {
+  .manrope-heading {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .manrope-heading {
+    font-size: 1.25rem;
+  }
+}
