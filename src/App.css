@@ -26,17 +26,34 @@
   gap: 1rem;
 }
 
-@media (max-width: 425px) {
-  .navigation {
-    display: none;
-  }
+.quote-section {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.quote {
+  max-width: 40ch;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+#author {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.cookie {
+  width: 15em;
 }
 
 .Banner a {
   text-decoration: none;
   color: inherit;
 }
-
 
 .main {
   display: flex;
@@ -96,30 +113,35 @@
   gap: 2.5rem;
 }
 
-.quote-icon {
-  transform: scaleX(-1);
-  width: 4rem;
-  padding: 0;
-}
-
-.quote {
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-}
-
-.quote-section {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 1rem;
-  max-width: 50vw;
+@media (max-width: 768px) {
+  .quote {
+    font-size: 1.75rem;
+  }
+  
+  #author {
+    font-size: 1.35rem;
+  }
 }
 
 @media (max-width: 425px) {
+  .navigation {
+    display: none;
+  }
+
   .manrope-heading {
     font-size: 1.75rem;
+  }
+
+  .cookie {
+    width: 5rem;
+  }
+
+  .quote {
+    font-size: 0.8rem;
+  }
+  
+  #author {
+    font-size: 0.8rem;
   }
 }
 

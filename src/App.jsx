@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Banner from "./components/Banner/Banner";
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import About from './components/About/About';
@@ -12,7 +11,7 @@ const App = () => {
   useEffect(() => {
     const getRandomQuote = async () => {
       try {
-        const res = await fetch("https://api.api-ninjas.com/v1/quotes?X-Api-Key=YZHdSYESRcP2p7ykTbDqFw==ckIzmUUwI89ujyIW");
+        const res = await fetch("https://api.api-ninjas.com/v1/quotes?X-Api-Key=YZHdSYESRcP2p7ykTbDqFw==ckIzmUUwI89ujyIW&category=inspirational");
         const data = await res.json();
         setQuote(data[0])
         console.log(data)
@@ -26,7 +25,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <Banner />
       <div className="Banner">
         <div className='username'>elizafoam</div>
         <div className='logo'><img src="/logo.png" alt="logo" /></div>
@@ -36,13 +34,23 @@ const App = () => {
           <a href="#experience"><div>Experience</div></a>
         </div>
       </div>
+
       <div id="header">
         <Header />
       </div>
-      <div className='curly manrope-heading'>~</div>
+
+      <div className='quote-section'>
+        <img className='cookie' src="/cookie.jpg" alt="cookie image" />
+        <div>
+            <div className='quote'>{quote["quote"]}</div>
+          <div id='author' className='manrope-body'>- {quote["author"]}</div>
+        </div>
+      </div>
+
       <div id="about">
         <About />
       </div>
+
       <section className='main' id="experience">
         <div className='about-title manrope-heading'>Professional Experience</div>
         <div className='experience-section'>
@@ -65,15 +73,8 @@ const App = () => {
             <Experience company={"Bloomberg"} location={"Remote"} position={"Princeton Tech Lab Fellow"} date={"Jun 2024 - Sep 2024"} skills={["Python", "Data Structures", "Algorithms", "Javascript", "Docker"]}/>
           </div>
         </div>
-
-        {/* <div className='quote-section'>
-          <div className='quote'>
-            <img className='quote-icon' src="quote.png" alt="" />
-            <div>{quote["quote"]}</div>
-          </div>
-          <div>- {quote["author"]}</div>
-        </div> */}
       </section>
+      
       <div className='curly manrope-heading'>~</div>
       <Footer />
     </div>
