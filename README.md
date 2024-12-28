@@ -1,5 +1,5 @@
 # personal portfolio
-My personal portfolio website where I showcase my experience, my sense of design and my personality.
+My personal portfolio website where I showcase my experience and sense of design.
 
 ## technologies
 - HTML5
