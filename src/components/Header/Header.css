@@ -29,6 +29,17 @@
   margin: -2.5rem;
 }
 
+.socials-icons {
+  padding-top: 3rem;
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.icon {
+  max-width: 4rem;
+}
+
 @media (max-width: 768px) {
   .Header img {
     width: 20rem;
@@ -40,6 +51,10 @@
   
   .name {
     font-size: 3rem;
+  }
+
+  .icon {
+    max-width: 3rem;
   }
 }
 
@@ -63,6 +78,14 @@
     margin: -0.5rem;
     width: 80vw;
   }
+
+  .icon {
+    max-width: 1.5rem;
+  }
+
+  .socials-icons {
+    padding-top: 1rem;
+  } 
 }
 
 @media (max-width: 375px) {

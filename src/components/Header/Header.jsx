@@ -9,6 +9,11 @@ const Header = () => {
         <div className='manrope-title greeting'>aloha,</div>
       </div>
       <div className='name manrope-body'>my name is Elizabeth J.</div>
+      <div className='socials-icons'>
+        <img className='icon' src="github.png" alt="github icon" />
+        <img className='icon' src="linkedin.png" alt="linkedin icon" />
+        <img className='icon' src="gmail.png" alt="gmail icon" />
+      </div>
     </div>
   )
 }

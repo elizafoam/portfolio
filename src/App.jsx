@@ -27,10 +27,23 @@ const App = () => {
   return (
     <div className="App">
       <Banner />
-      <Header />
-      <About />
+      <div className="Banner">
+        <div className='username'>elizafoam</div>
+        <div className='logo'><img src="/logo.png" alt="logo" /></div>
+        <div className='navigation'>
+          <a href="#header"><div>Home</div></a>
+          <a href="#about"><div>About</div></a>
+          <a href="#experience"><div>Experience</div></a>
+        </div>
+      </div>
+      <div id="header">
+        <Header />
+      </div>
       <div className='curly manrope-heading'>~</div>
-      <section className='main'>
+      <div id="about">
+        <About />
+      </div>
+      <section className='main' id="experience">
         <div className='about-title manrope-heading'>Professional Experience</div>
         <div className='experience-section'>
           <div className='experiences'>
