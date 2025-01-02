@@ -6,22 +6,6 @@ import Experience from './components/Experience/Experience';
 import './App.css';
 
 const App = () => {
-  const [quote, setQuote] = useState([]);
-
-  useEffect(() => {
-    const getRandomQuote = async () => {
-      try {
-        const res = await fetch("https://api.api-ninjas.com/v1/quotes?X-Api-Key=YZHdSYESRcP2p7ykTbDqFw==ckIzmUUwI89ujyIW&category=inspirational");
-        const data = await res.json();
-        setQuote(data[0])
-        console.log(data)
-      } catch (error) {
-        console.log(error)
-      }
-    }
-    getRandomQuote();
-  }, []);
-
 
   return (
     <div className="App">
@@ -42,8 +26,8 @@ const App = () => {
       <div className='quote-section'>
         <img className='cookie' src="/cookie.jpg" alt="cookie image" />
         <div>
-            <div className='quote'>{quote["quote"]}</div>
-          <div id='author' className='manrope-body'>- {quote["author"]}</div>
+            <div className='quote'>It's only up from here</div>
+          <div id='author' className='manrope-body'>- Someone famous</div>
         </div>
       </div>
 
